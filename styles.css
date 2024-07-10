@@ -42,3 +42,56 @@ button {
     margin-top: 20px;
     font-weight: bold;
 }
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button,
+.dropdown-content .csv-label {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content .csv-label {
+    padding: 12px 16px;
+}
+
+.dropdown-content button:hover,
+.dropdown-content .csv-label:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#importFile {
+    display: none;
+}
